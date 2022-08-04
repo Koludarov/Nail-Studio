@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    {% block title %}{% endblock title %}
+</head>
+<body>
+<div class="bg-success p-2 text-dark bg-opacity-10">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="check" viewBox="0 0 16 16">
+    <title>Check</title>
+    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"></path>
+  </symbol>
+</svg>
+
+<div class="container py-3">
+  <header>
+    <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+          <img src="https://xsun9-61.userxxapi.com/impg/T_V9BdC-keqJ3acT_c5VAZmtSx9tNS1IepnfmQ/hJGjy6pU_WA.jpg?size=1080x1080&quality=96&sign=50f590d967457a7f3085c78ed19fc6c8&type=album" width="75" height="75"><title>Logo</title>
+        <span class="fs-4">X NAIL💎 </span>
+      </a>
+
+      <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+        <a class="me-3 py-2 text-dark text-decoration-none" href="/">Главная</a>
+        <a class="me-3 py-2 text-dark text-decoration-none" href="/about">Про студию</a>
+        <a class="me-3 py-2 text-dark text-decoration-none" href="/support">Поддержка</a>
+      </nav>
+        <a class="btn btn-outline-primary" href="/create">Добавить услугу</a>
+    </div>
+  </header>
+
+
+    {% block content %}{% endblock content %}
+  <footer class="pt-4 my-md-5 pt-md-5 border-top">
+    <div class="row">
+      <div class="col-12 col-md">
+        <small class="d-block mb-3 text-muted">© 2021–2022</small>
+
+     <a class="btn btn-outline-primary"  href="http://www.instagram.com/X_nail/">Ig</a>
+        <a class="btn btn-outline-primary"  href="https://t.me/X_nail">Tg</a>
+     <a class="btn btn-outline-primary"  href="https://vk.com/X_nail">VK</a>
+     <a class="btn btn-outline-primary"  href="https://yandex.ru/profile/#">Карта</a>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Пока пустые разделы</h5>
+        <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Набор в команду Xnail</a></li>
+           <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Архив вакансий</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Клевые фишки</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Вернемся к страничке</a></li>
+
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Вебинары</h5>
+        <ul class="list-unstyled text-small">
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Стэмпинг</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Фольга</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Рисуем френч</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Дизайны своими руками</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Курсы</h5>
+        <ul class="list-unstyled text-small">
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Базовый с нуля</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Улучшаем технику</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Педикюр для профи</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Фишки ТОП мастера</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</div>
+
+
+    </div>
+
+
+</body>
+</html>

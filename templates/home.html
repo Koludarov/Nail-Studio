@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block title %}
+    <title>X NAIL</title>
+{% endblock title %}
+{% block content %}
+
+<div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+  <h1 class="display-4 fw-normal"><img src="https://xsun9-63.userxxapi.com/impg/NjLTVS-zBh3xfObY00rwDbLOb0zQu1gwcmgJYw/wkgev3RpdUI.jpg?size=1080x1080&quality=95&sign=702853c21feff780099c1795f82e40d9&type=album" align="left" width="250" height="250">Список услуг и товаров🤍<img src="https://xsun9-22.userxxapi.com/impg/eA8bH83MsaS8PoDlU4IeRr1_Z-Xc2G1KEgsZvA/mTeiMiEOeDg.jpg?size=1080x1080&quality=96&sign=812ac2b154e146b4f3bfe329bd02da4e&type=album" align="right" width="250" height="250"></h1>
+  <p class="fs-5 text-muted">Самая лучшая студия маникюра в мире!💎</p>
+</div>
+<br><br><br><br>
+    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+         {% for el in data %}
+      <div class="col">
+
+        <div class="card border-light bg-success p-2 text-dark bg-opacity-10 mb-4 rounded-3 shadow">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">{{ el.title }}💅</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">{{ el.price }}<small class="text-muted fw-light">рублей</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>{{ el.description }}</li>
+            </ul>
+            <a href="/buy/{{ el.id }}" class="w-100 btn btn-lg btn-outline-secondary">Купить</a>
+          </div>
+        </div>
+      </div>
+     {% endfor %}
+    </div>
+
+{% endblock content %}
